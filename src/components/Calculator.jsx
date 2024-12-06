@@ -1,4 +1,3 @@
-import MethodsForCalc from "./MethodsForCalc";
 import { useState } from "react";
 
 function Calculator () {
