@@ -1,18 +1,18 @@
-import { useState } from "react";
 import "./App.css";
 import Calculator from "./components/Calculator";
-import MethodsForCalc from "./components/MethodsForCalc";
 import {Routes, Route} from 'react-router-dom'
 
+import UserList from "./components/UserList";
 
 function App() {
-  const [count, setCount] = useState(0);
+  
 
   return(<>
-  <Routes>
-    <Route path='/calculator' element={<Calculator/>}/>
-  </Routes>
-  </>) ;
+      <Routes>
+          <Route path='/calculator' element={<Calculator/>}/>
+          <Route path='/users' element={<UserList/>}/>
+      </Routes>
+        </>) ;
 }
 
 export default App;
